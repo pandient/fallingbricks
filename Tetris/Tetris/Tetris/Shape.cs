@@ -8,10 +8,16 @@ namespace Tetris
     class Shape
     {
         public Block[] blocks;
+        public Orientation CurrentOrientation;
 
         public Shape()
         {
-           
+
         }
     }
+
+    public enum Orientation
+    {
+        East, West, North, South
+    };
 }
